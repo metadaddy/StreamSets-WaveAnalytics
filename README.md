@@ -14,6 +14,14 @@ You will need the following:
 
 * A Salesforce Environment ('org') with Wave Analytics enabled. For development and evaluation, the easiest way to get one is via the [Wave Analytics Basics](https://developer.salesforce.com/trailhead/module/wave_analytics_basics) Trailhead module.
 
+Installation
+------------
+
+Download the [Wave destination tarball](https://github.com/metadaddy/StreamSets-WaveAnalytics/blob/master/target/WaveAnalytics-Destination-1.0-SNAPSHOT.tar.gz) and extract it in the SDC user-libs directory:
+
+	$ cd path-to-sdc/user-libs
+	$ tar xvfz WaveAnalytics-Destination-1.0-SNAPSHOT.tar.gz
+
 Configuration
 -------------
 

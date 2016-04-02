@@ -4,7 +4,14 @@
 .DS_Store
 *.iml
 .idea/
-target/
+target/*.jar
+target/generated-test-sources
+target/maven-archiver
+target/archive-tmp
+target/maven-status
+target/classes
+target/test-classes
+target/generated-sources
 
 # User-specific stuff:
 .idea/workspace.xml
