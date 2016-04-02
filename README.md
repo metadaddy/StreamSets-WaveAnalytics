@@ -3,7 +3,7 @@ StreamSets Data Collector Destination for Salesforce Wave Analytics
 
 The StreamSets Wave destination allows you to write data from StreamSets Data Collector (SDC) to Salesforce Wave Analytics (Wave). The destination periodically writes datasets to Wave, and can be configured to combine those datasets into a single aggregation for analysis via a Wave dataflow.
 
-At the time of writing, the Wave destination is in its early stages of development. Feel free to use it, and [report any issues](https://github.com/metadaddy/StreamSets-WaveAnalytics/issues) that you might find.
+At the time of writing, the Wave destination is in its early stages of development. Feel free to use it, and [report any issues](https://github.com/metadaddy/StreamSets-WaveAnalytics/issues) that you might find. In particular, the Wave destination uses internal Salesforce APIs (as also used by [Analytics Cloud DatasetUtils](https://github.com/forcedotcom/Analytics-Cloud-Dataset-Utils)) to manage dataflow, and will require updating when these are publicly released.
 
 Pre-requisites
 --------------
