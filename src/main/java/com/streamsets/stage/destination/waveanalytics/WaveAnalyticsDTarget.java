@@ -97,7 +97,7 @@ public class WaveAnalyticsDTarget extends WaveAnalyticsTarget {
           type = ConfigDef.Type.STRING,
           defaultValue = "SalesEdgeEltWorkflow",
           label = "Dataflow Name",
-          description = "Name of a dataflow to combine datasets into one.",
+          description = "Name of a dataflow to combine datasets into one. CAUTION - existing dataflow content will be overwritten!",
           displayPosition = 60,
           dependsOn = "useDataflow",
           triggeredByValue = "true",
