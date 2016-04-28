@@ -36,6 +36,12 @@ Configuration
 | Run Dataflow After Upload | If enabled, the Wave destination will request that the dataflow run after each dataset is uploaded. Note that, currently, Salesforce limits each org to 24 dataflow executions per 24 hour period, so you should carefully consider whether you should enable this setting in production. |
 | Metadata JSON | Metadata describing the schema of the dataset. This is optional but recommended, as it allows Wave to recognize date and currency fields and show field names. See the [Wave Analytics External Data Format Reference](https://developer.salesforce.com/docs/atlas.en-us.bi_dev_guide_ext_data_format.meta/bi_dev_guide_ext_data_format/) for details on the Metadata JSON syntax. |
 
+Since the origin calls out to Salesforce, you will need to add a section to the security policy file in `path-to-sdc/etc/sdc-security.policy`:
+
+	grant codebase "file://${sdc.dist.dir}/user-libs/WaveAnalytics-Destination/-" {
+	  permission java.net.SocketPermission "*", "connect, resolve";
+	};
+
 Operation
 ---------
 
